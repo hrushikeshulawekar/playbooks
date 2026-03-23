@@ -1,0 +1,10 @@
+---
+# docker installation
+- name: docker installation
+  hosts: localhost
+  become: yes
+  gather_facts: no
+  tasks:
+  - name: install docker
+    command:
+      cmd: /etc/ansible/playbooks/docker.sh
